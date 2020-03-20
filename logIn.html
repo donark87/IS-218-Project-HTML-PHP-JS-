@@ -1,0 +1,31 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script type="text/javascript" src="index.js"></script>
+    <meta charset="UTF-8">
+    <title>Log in - Page</title>
+</head>
+<body>
+<div class="login-form">
+    <form action="checkLogin.php" onsubmit=" return validateLogin()" method="POST">
+        <div class="form-group">
+            <h3>Log in</h3>
+            <small id="emailHelp" class="form-text text-muted"> Do you have an account? <a href="index.html">Sign up</a> </small>
+            <label for="inputEmail">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" name="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" value="amunnis3@microsoft.com">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Password" value="7a35omt1ys2">
+        </div>
+        <button type="submit" onclick=" return validateLogin()" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</body>
+</html>
+
