@@ -73,11 +73,11 @@ else {
             <h3>Log in</h3>
             <small id="emailHelp" class="form-text text-muted"> Do you have an account? <a href="index.html">Sign up</a> </small>
             <label for="inputEmail">Email address</label>
-            <input type="email" class="form-control" id="inputEmail" name="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" value="amunnis3@microsoft.com">
+            <input type="email" class="form-control" id="inputEmail" name="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" >
         </div>
         <div class="form-group">
             <label for="inputPassword">Password</label>
-            <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Password" value="7a35omt1ys2">
+            <input type="password" class="form-control" id="inputPassword" name="inputPassword" placeholder="Password" >
         </div>
         <button type="submit" onclick=" return validateLogin()" class="btn btn-primary">Submit</button>
     </form>

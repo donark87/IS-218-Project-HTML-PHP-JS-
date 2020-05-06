@@ -48,3 +48,56 @@ function validateLogin(){
         return false;
     }
 }
+
+function  validateEdit() {
+    var date  = document.getElementById("date").value;
+    var title  = document.getElementById("title").value;
+    var description  = document.getElementById("description").value;
+
+    if(date.length == 0){
+        alert("Please, enter date.");
+        return false;
+    }
+    else if(title.length == 0){
+        alert("Please, enter title.");
+        return false;
+    }
+    else if(description.length == 0){
+        alert("Please, enter description");
+        return false;
+
+    }
+    else if(description.length > 144){
+        alert("144 max characters allowed for description.");
+        return false;
+
+    }
+    else return true;
+
+}
+function  validateNew() {
+    var date  = document.getElementById("dateNew").value;
+    var title  = document.getElementById("titleNew").value;
+    var description  = document.getElementById("descriptionNew").value;
+
+    if(date.length == 0){
+        alert("Please, enter date.");
+        return false;
+    }
+    else if(title.length == 0){
+        alert("Please, enter title.");
+        return false;
+    }
+    else if(description.length == 0){
+        alert("Please, enter description");
+        return false;
+
+    }
+    else if(description.length > 144){
+        alert("144 max characters allowed for description.");
+        return false;
+
+    }
+    else return true;
+
+}
